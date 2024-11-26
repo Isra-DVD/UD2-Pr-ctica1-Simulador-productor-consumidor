@@ -13,6 +13,9 @@ public class App {
         Client consumer2 = new Client("Mr. Gentleman", 10, restaurant);
         Client consumer3 = new Client("Loquendo", 5, restaurant);
 
+        farmer1.setPriority(Thread.MAX_PRIORITY);
+        farmer2.setPriority(Thread.MAX_PRIORITY);
+
         farmer1.start();
         farmer2.start();
 
