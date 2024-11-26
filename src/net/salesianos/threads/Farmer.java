@@ -28,7 +28,7 @@ public class Farmer extends Thread {
             for (int i = 0; i < amount; i++) {
                 String type = vegetableType[random.nextInt(vegetableType.length)];
                 Vegetable vegetable = new Vegetable(type);
-                Thread.sleep(random.nextInt(1000) + 500);
+                Thread.sleep(random.nextInt(500) + 500);
                 System.out.println(vegetable + " producida por el grajero " + name);
                 restaurant.add(vegetable);
             }
